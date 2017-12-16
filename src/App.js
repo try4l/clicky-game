@@ -53,7 +53,9 @@ class App extends Component {
   constructor(props) {
   super(props);
   this.state = {
-    friends
+    friends,
+    //score,
+    //highScore
     };
   }
 
@@ -69,13 +71,13 @@ class App extends Component {
   //   this.setState({ friends });
   // };
   
-  clickFriend = i => {
-    // Set wasClicked for friend with an id equal to the id being clicked
-    const friends = this.state.friends.slice();
-    friends[i].wasClicked=true;
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
-  }
+  // clickFriend = i => {
+  //   // Set wasClicked for friend with an id equal to the id being clicked
+  //   const friends = this.state.friends.slice();
+  //   friends[i].wasClicked=true;
+  //   // Set this.state.friends equal to the new friends array
+  //   this.setState({ friends });
+  // }
   
   // handleClick(i) {
   //   const squares = this.state.squares.slice();
@@ -97,24 +99,23 @@ class App extends Component {
   //   return a;
   // }
 
-  // shuffleFriends () {
-  //   return shuffle(this.state.friends);
-  // }
+  shuffleFriends () {
+    shuffle(friends);
+    console.log("friends: ", friends);
+    //this.setState({friends: newFriends});
+  }
 
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>
+        <button onClick={this.shuffleFriends}>shuffle</button>
         <Title>Clicky Game</Title>
         {this.state.friends.map(friend => (
           <FriendCard
-            //removeFriend={this.removeFriend}
             id={friend.id}
             key={friend.id}
-            //name={friend.name}
             image={friend.image}
-            //occupation={friend.occupation}
-            //location={friend.location}
             wasClicked={friend.wasClicked}
           />
         ))}
@@ -124,3 +125,12 @@ class App extends Component {
 }
 
 export default App;
+
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
