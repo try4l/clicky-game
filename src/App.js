@@ -99,11 +99,22 @@ class App extends Component {
   //   return a;
   // }
 
-  shuffleFriends () {
-    shuffle(friends);
-    console.log("friends: ", friends);
-    //this.setState({friends: newFriends});
-  }
+  shuffleFriends = () => {
+    console.log('Calling shuffleFriends');
+    //friends = shuffle(friends);
+    console.log("friends: ", friends, newFriends);
+    let newFriends = shuffle(friends);
+    console.log("friends: ", friends, newFriends);
+    this.setState({friends: newFriends});
+  };
+
+
+
+  wasClicked = () => {
+    console.log('App.wasClicked');
+    this.setState({ originalOrder: this.state.friends });
+    this.shuffleFriends();
+  };
 
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
@@ -116,7 +127,8 @@ class App extends Component {
             id={friend.id}
             key={friend.id}
             image={friend.image}
-            wasClicked={friend.wasClicked}
+            onClick={friend.wasClicked}
+            wasClicked={this.wasClicked}
           />
         ))}
       </Wrapper>
@@ -131,6 +143,6 @@ function shuffle(a) {
     const j = Math.floor(Math.random() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
   }
-  return a;
+  return a.map(item => { return item; });
 }
 

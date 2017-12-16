@@ -2,15 +2,19 @@ import React from "react";
 import "./FriendCard.css";
 
 class FriendCard extends React.Component {
-  constructor(props) {
-  super(props);
-  this.state = {
-      value: null,
+  state = {
+      value: null
     };
-  }
+
+  wasClicked = () => {
+    this.props.wasClicked();
+    this.setState({value: 'true'});
+    console.log('Finishing FriendCard.wasClicked');
+  };
+
   render() {
     return (
-      <button className="card" onClick={() => this.setState({value: 'true'})}>
+      <button className="card" onClick={this.wasClicked}>
         {this.state.value}
 
         <div className="img-container">
