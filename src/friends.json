@@ -6,7 +6,8 @@
     "image": "./images/RWS_Tarot_00_Fool.jpg",
     "imagez": "https://upload.wikimedia.org/wikipedia/en/thumb/9/90/RWS_Tarot_00_Fool.jpg/275px-RWS_Tarot_00_Fool.jpg",
     "occupation": "Fry Cook",
-    "location": "A Pineapple Under the Sea"
+    "location": "A Pineapple Under the Sea",
+    "wasClicked": "false"
   },
   {
     "id": 2,
@@ -14,15 +15,17 @@
     "imagex": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
     "image": "./images/RWS_Tarot_01_Magician.jpg",
     "occupation": "Restaurant Owner",
-    "location": "A Giant Anchor"
+    "location": "A Giant Anchor",
+    "wasClicked": "false"
   },
-    {
+  {
     "id": 3,
     "name": "Squidward",
     "imagex": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
     "image": "./images/RWS_Tarot_02_High_Priestess.jpg",
     "occupation": "Cashier",
-    "location": "An Easter Island Head"
+    "location": "An Easter Island Head",
+    "wasClicked": "false"
   },
   {
     "id": 4,
@@ -30,7 +33,8 @@
     "imagex": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
     "image": "./images/RWS_Tarot_03_Empress.jpg",
     "occupation": "Boy Genius",
-    "location": "A Secret Laboratory"
+    "location": "A Secret Laboratory",
+    "wasClicked": "false"
   },
   {
     "id": 5,
@@ -38,7 +42,8 @@
     "imagex": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
     "image": "./images/RWS_Tarot_04_Emperor.jpg",
     "occupation": "A Cowardly Dog",
-    "location": "Nowhere, Kansas"
+    "location": "Nowhere, Kansas",
+    "wasClicked": "false"
   },
   {
     "id": 6,
@@ -46,7 +51,8 @@
     "imagex": "https://vignette1.wikia.nocookie.net/doug/images/3/3b/Doug001.gif/revision/latest?cb=20110807170511",
     "image": "./images/RWS_Tarot_05_Hierophant.jpg",
     "occupation": "Student",
-    "location": "Bluffington"
+    "location": "Bluffington",
+    "wasClicked": "false"
   },
   {
     "id": 7,
@@ -54,7 +60,8 @@
     "imagex": "https://vignette2.wikia.nocookie.net/deathbattlefanon/images/2/2b/Bugs_Bunny.png/revision/latest?cb=20151206010607",
     "image": "./images/RWS_Tarot_06_Lovers.jpg",
     "occupation": "Looney Toon",
-    "location": "A Rabbit Burrow"
+    "location": "A Rabbit Burrow",
+    "wasClicked": "false"
   },
   {
     "id": 8,
@@ -62,7 +69,8 @@
     "imagex": "http://vignette3.wikia.nocookie.net/p__/images/9/9a/Johnny_Bravo.png/revision/latest?cb=20131031233339&path-prefix=protagonist",
     "image": "./images/RWS_Tarot_07_Chariot.jpg",
     "occupation": "Ladies Man",
-    "location": "Aron City"
+    "location": "Aron City",
+    "wasClicked": "false"
   },
   {
     "id": 9,
@@ -70,7 +78,8 @@
     "imagex": "https://vignette4.wikia.nocookie.net/uncyclopedia/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20110530102641",
     "image": "./images/RWS_Tarot_08_Strength.jpg",
     "occupation": "Adventurer",
-    "location": "California"
+    "location": "California",
+    "wasClicked": "false"
   },
   {
     "id": 10,
@@ -78,7 +87,8 @@
     "imagex": "http://vignette3.wikia.nocookie.net/rockosmodernlife/images/9/9e/Rockos-modern-life-4e582a8f06a41.png/revision/latest?cb=20130522173416",
     "image": "./images/RWS_Tarot_09_Hermit.jpg",
     "occupation": "Cashier",
-    "location": "O-Town, California"
+    "location": "O-Town, California",
+    "wasClicked": "false"
   },
   {
     "id": 11,
@@ -86,7 +96,8 @@
     "imagex": "http://vignette2.wikia.nocookie.net/dragon-rap-battles/images/b/b6/Captain_Planet.png/revision/latest?cb=20160911200836",
     "image": "./images/RWS_Tarot_10_Wheel_of_Fortune.jpg",
     "occupation": "Superhero",
-    "location": "Earth"
+    "location": "Earth",
+    "wasClicked": "false"
   },
   {
     "id": 12,
@@ -94,48 +105,59 @@
     "imagex": "http://static.tvtropes.org/pmwiki/pub/images/ickis.png",
     "image": "./images/RWS_Tarot_11_Justice.jpg",
     "occupation": "Ahhhh! A Real Monster!",
-    "location": "Under a City Dump"
+    "location": "Under a City Dump",
+    "wasClicked": "false"
   },
   {
     "id": 13,
     "image": "./images/RWS_Tarot_12_Hanged_Man.jpg",
     "occupation": "Ahhhh! A Real Monster!",
-    "location": "Under a City Dump"
+    "location": "Under a City Dump",
+    "wasClicked": "false"
   },  
   {
     "id": 14,
-    "image": "./images/RWS_Tarot_13_Death.jpg"
+    "image": "./images/RWS_Tarot_13_Death.jpg",
+    "wasClicked": "false"
   },  
   {
     "id": 15,
-    "image": "./images/RWS_Tarot_14_Temperance.jpg"
+    "image": "./images/RWS_Tarot_14_Temperance.jpg",
+    "wasClicked": "false"
   },  
   {
     "id": 16,
-    "image": "./images/RWS_Tarot_15_Devil.jpg"
+    "image": "./images/RWS_Tarot_15_Devil.jpg",
+    "wasClicked": "false"
   },  
   {
     "id": 17,
-    "image": "./images/RWS_Tarot_16_Tower.jpg"
+    "image": "./images/RWS_Tarot_16_Tower.jpg",
+    "wasClicked": "false"
   },  
   {
     "id": 18,
-    "image": "./images/RWS_Tarot_17_Star.jpg"
+    "image": "./images/RWS_Tarot_17_Star.jpg",
+    "wasClicked": "false"
   },  
   {
     "id": 19,
-    "image": "./images/RWS_Tarot_18_Moon.jpg"
+    "image": "./images/RWS_Tarot_18_Moon.jpg",
+    "wasClicked": "false"
   },  
   {
     "id": 20,
-    "image": "./images/RWS_Tarot_19_Sun.jpg"
+    "image": "./images/RWS_Tarot_19_Sun.jpg",
+    "wasClicked": "false"
   },  
   {
     "id": 21,
-    "image": "./images/RWS_Tarot_20_Judgement.jpg"
+    "image": "./images/RWS_Tarot_20_Judgement.jpg",
+    "wasClicked": "false"
   },
   {
     "id": 22,
-    "image": "./images/RWS_Tarot_21_World.jpg"
+    "image": "./images/RWS_Tarot_21_World.jpg",
+    "wasClicked": "false"
   }
 ]
