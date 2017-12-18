@@ -1,16 +1,19 @@
 .card {
   background: #fff;
   border-radius: 2px;
-  height: 310px;
-  margin: 1rem;
+  height: 155px;
+  margin: 10px;
   position: relative;
-  width: 300px;
+  width: 150px;
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;
   text-align: left;
 }
 
 .card:hover {
     box-shadow: 0 6px 9px #555, 0 6px 9px #555;
+    margin: 5px;
+    height: 165px;
+    width: 160px;
 }
 
 .card > .img-container {
@@ -24,9 +27,9 @@
 }
 
 .card > .content {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+/*  font-size: 15px;*/
 }
 
 .card > .content > ul {
@@ -37,7 +40,7 @@
   margin-top: 18px;
 }
 
-.card > .remove {
+/*.card > .remove {
   color: #ff1744;
   font-size: 48px;
   position: absolute;
@@ -48,4 +51,4 @@
 
 .card > .remove:hover {
   color: #d50000;
-}
+}*/

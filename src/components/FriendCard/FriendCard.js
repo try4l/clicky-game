@@ -3,7 +3,7 @@ import "./FriendCard.css";
 
 class FriendCard extends React.Component {
   state = {
-      value: null
+      value: false
     };
 
   wasClicked = () => {

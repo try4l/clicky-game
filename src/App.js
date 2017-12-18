@@ -121,6 +121,7 @@ class App extends Component {
     return (
       <Wrapper>
         <button onClick={this.shuffleFriends}>shuffle</button>
+        <counter />
         <Title>Clicky Game</Title>
         {this.state.friends.map(friend => (
           <FriendCard
