@@ -1,10 +1,10 @@
 .card {
   background: #fff;
   border-radius: 2px;
-  height: 155px;
+  height: 200px;
   margin: 10px;
   position: relative;
-  width: 150px;
+  width: 175px;
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;
   text-align: left;
 }
@@ -12,8 +12,8 @@
 .card:hover {
     box-shadow: 0 6px 9px #555, 0 6px 9px #555;
     margin: 5px;
-    height: 165px;
-    width: 160px;
+    height: 210px;
+    width: 185px;
 }
 
 .card > .img-container {
@@ -23,22 +23,23 @@
   background:#6CADDC;
 }
 .card > .img-container > img {
-  width: 60%
+  margin-top: 5px;
+  width: 65%
 }
 
-.card > .content {
+/*.card > .content {
+  padding-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
-/*  font-size: 15px;*/
-}
+}*/
 
-.card > .content > ul {
+/*.card > .content > ul {
   list-style-type: none;
 }
 
 .card > .content > ul > li {
   margin-top: 18px;
-}
+}*/
 
 /*.card > .remove {
   color: #ff1744;

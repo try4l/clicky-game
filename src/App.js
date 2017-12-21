@@ -3,6 +3,7 @@ import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import friends from "./friends.json";
+
 import "./App.css";
 // eslint-disable-next-line
 import image0 from "./images/RWS_Tarot_00_Fool.jpg"
@@ -54,11 +55,15 @@ class App extends Component {
   super(props);
   this.state = {
     friends,
-    //score,
     //highScore
     };
   }
 
+    componentDidMount = () => {
+        const originalOrder = friends;
+        console.log("componentDidMount: originalOrder: ", originalOrder);
+        this.setState({originalOrder: friends});
+    };
   // Setting this.state.friends to the friends json array
   // state = {
   //   friends
@@ -102,13 +107,12 @@ class App extends Component {
   shuffleFriends = () => {
     console.log('Calling shuffleFriends');
     //friends = shuffle(friends);
-    console.log("friends: ", friends, newFriends);
+    console.log("friends: ", friends);
+    console.log("originalOrder: ", this.originalOrder);
     let newFriends = shuffle(friends);
-    console.log("friends: ", friends, newFriends);
+    //console.log("friends: ", friends, newFriends);
     this.setState({friends: newFriends});
   };
-
-
 
   wasClicked = () => {
     console.log('App.wasClicked');
@@ -116,12 +120,32 @@ class App extends Component {
     this.shuffleFriends();
   };
 
+   // handleIncrement increases this.state.count by 1
+  handleIncrement = () => {
+    console.log("App: handleIncrement: ");
+    // We always use the setState method to update a component's state
+    this.setState({ count: this.state.count + 1 });
+  };
+
+  // handleDecrement decreases this.state.count by 1
+  handleReset = () => {
+    // We always use the setState method to update a component's state
+    this.setState({ count: 0 });
+    //this.setState({this.state.friends});
+    window.location.reload();
+  };
+
+
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>
         <button onClick={this.shuffleFriends}>shuffle</button>
-        <counter />
+        <button onClick={this.handleIncrement}>inc</button>
+        <button onClick={this.handleReset}>rst</button>
+        <counter 
+          count={this.state.count}
+        />
         <Title>Clicky Game</Title>
         {this.state.friends.map(friend => (
           <FriendCard
